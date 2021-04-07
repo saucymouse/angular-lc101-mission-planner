@@ -27,9 +27,5 @@ export class EquipmentComponent implements OnInit {
    ngOnInit() { }
 
    // Code your addItem function here:
-   addItem(item): boolean {
-      this.cargoHold.push(item);
-      return true;
-   }
    
 }
