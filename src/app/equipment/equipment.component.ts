@@ -1,3 +1,4 @@
+import { toBase64String } from '@angular/compiler/src/output/source_map';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -30,6 +31,7 @@ export class EquipmentComponent implements OnInit {
    addItem(item): boolean {
       this.cargoHold.push(item);
       return true;
+      toBase64String;
    }
    
 }
