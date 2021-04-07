@@ -30,8 +30,8 @@ export class EquipmentComponent implements OnInit {
    // Code your addItem function here:
    addItem(item): boolean {
       this.cargoHold.push(item);
+      console.log('it works');
       return true;
-      toBase64String;
    }
    
 }
