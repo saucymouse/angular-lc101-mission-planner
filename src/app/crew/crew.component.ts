@@ -25,5 +25,15 @@ export class CrewComponent implements OnInit {
   ngOnInit() { }
 
   // Code the 'addCrewMember' function here:
+  addCrewMember(candidate: object): void {
+    if(!this.crew.includes(candidate) && this.crew.length < 3) {
+      this.crew.push(candidate);
+    } else if (this.crew.includes(candidate)) {
+      this.crew.splice(this.crew.indexOf(candidate), 1)
+    }
+  }
 
+  displayAstronaut(candidate) {
+    return "https://education.launchcode.org/intro-to-professional-web-dev/_images/lesson3-interactive-text-styling.gif"
+  }
 }
